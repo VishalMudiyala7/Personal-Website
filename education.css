@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a,a:hover{
+    text-decoration: none;
+}
+
+
+ul{
+    list-style: none;
+}
+
+.box{​​​​​
+position: relative;
+width: 100%;
+height: 100vh;
+background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(https://i.pinimg.com/originals/0c/ea/6f/0cea6fabe4d9d5256e0d1b2474927732.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+color: white;
+font-family: 'Century Gothic',sans-serif;
+border: 15px solid green;
+box-shadow: 10px 10px 10px black;;
+
+}​​​​​
+

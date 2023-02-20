@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a,a:hover{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.box{
+position: relative;
+width: 100%;
+height: 100vh;
+background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(https://img.deusm.com/informationweek/February20/skills-Murrstock-adobe.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+color: white;
+font-family: 'Century Gothic',sans-serif;
+border: 15px solid green;
+box-shadow: 10px 10px 10px black;
+}
+
+* { 
+     box-sizing: border-box}
+
+.container {
+width: 100%;
+background-color: #ddd;
+}
+
+.dexterity {
+text-align: right;
+padding-top: 10px;
+padding-bottom: 10px;
+color: white;
+}
+
+.html {width: 60%; background-color: #4CAF50;}
+.css {width: 80%; background-color: #2196F3;}
+.py {width:50%; background-color: #f44336;}
+.C {width: 80%; background-color: orange;}
+.OS {width: 75%; background-color: pink;}
+.networking {width: 79%; background-color: violet;}
+.DBMS {width: 80%; background-color: #c32865;}

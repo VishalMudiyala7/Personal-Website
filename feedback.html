@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" type="text/css" href="feedback style.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/
+css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS file -->
+    <link rel="stylesheet" href="feedbackform.css">
+
+</head>
+<script>
+function validate()
+{
+
+sname=document.getElementById("nm").value;
+
+smobile=document.getElementById("mb").value;
+saddress=document.getElementById("add").value;
+scity=document.getElementById("ct").value;
+sstate=document.getElementById("st").value;
+spin=document.getElementById("pin").value;
+if(sname==""||smobile==""||saddress==""||scity==""||sstate==""||spin=="")
+{
+alert("Fields should not be empty");
+return false;
+}
+else if(!sname.match(/^[A-Za-z]+$/))
+{
+alert("Name should contain only characters")
+return false;
+}
+else if(!smobile.match(/^\d{10}$/))
+{
+alert("Mobile number Not valid")
+return false;
+}
+else if(!spin.match(/^\d{6}$/))
+{
+alert("Pin number Not valid")
+return false;
+}
+alert("Valid");
+return false;
+}
+</script>
+
+<body>
+
+    <section id="form-section">
+        <h1 class="h1-tag">Your Feedback Is important For Us</h1>
+        <form class="form-content-section">
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Enter your opinion
+</label>
+                <textarea class="form-control" 
+id="exampleFormControlTextarea1" rows="3"></textarea>
+
+  <form name="frmStudent">
+<table align="center" width=300>
+<tr><th colspan=2></th></tr>
+<tr><td>Name</td><td><input type=text name=txtSname id=nm size=30></td>
+<tr><td>Mobile No</td><td><input type=text name=txtSmobile id=mb size=30></td>
+<tr><td>Email</td><td><input type=text name=txtSaddress id=add size=30></td>
+<tr><td>City</td><td><input type=text name=txtScity id=ct size=30></td>
+<tr><td>State</td><td><input type=text name=txtSstate id=st size=30></td>
+<tr><td>Pincode</td><td><input type=text name=txtSpin id=pin size=30></td>
+
+<h5>RATE US</h5>
+<div class="rate">
+	<input type="radio" id="star5" name="rate" value="5" />
+    <label for="star5" title="text">5 stars</label>
+    <input type="radio" id="star4" name="rate" value="4" />
+    <label for="star4" title="text">4 stars</label>
+    <input type="radio" id="star3" name="rate" value="3" />
+    <label for="star3" title="text">3 stars</label>
+    <input type="radio" id="star2" name="rate" value="2" />
+    <label for="star2" title="text">2 stars</label>
+    <input type="radio" id="star1" name="rate" value="1" />
+    <label for="star1" title="text">1 star</label>
+  </div>
+           
+    <tr><td><input type=submit value="Submit" onClick="return validate()"></td><td><input type=reset value="Reset"></td></tr>
+</table>
+</form>        
+        </form>
+    </section>
+</body>
+</html>
